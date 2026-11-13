@@ -1,5 +1,5 @@
-// The SynBy 0.9.22 (public)
-const CACHE = 'synby-public-0.9.22';
+// The SynBy 0.9.23 (public)
+const CACHE = 'synby-public-0.9.23';
 const SHELL = ["./","./index.html","./app.js","./app.css","./manifest.webmanifest","./icon-192.png","./icon-512.png","./icon-maskable-512.png","./apple-touch-icon.png","./favicon-32.png"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
